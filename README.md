@@ -391,9 +391,9 @@ Deploy automated reactivation programs at critical inactivity thresholds (30, 60
 
 # 🔗 Project Links
 
-**Power BI Dashboard:** https://app.powerbi.com/view?r=eyJrIjoiYTY0MmQ3MjctNjhiYS00NTg1LWI0ZGUtZDA5NjBmMWI4NmRmIiwidCI6IjNkZmU5YWI2LTgxYmYtNDkxYy1iNjcwLTAxYzgyNGEwOWUxOSJ9
+**Power BI Dashboard:** [https://app.powerbi.com/view?r=eyJrIjoiYTY0MmQ3MjctNjhiYS00NTg1LWI0ZGUtZDA5NjBmMWI4NmRmIiwidCI6IjNkZmU5YWI2LTgxYmYtNDkxYy1iNjcwLTAxYzgyNGEwOWUxOSJ9]
 
-**GitHub Repository:** [Add Repository Link]
+**GitHub Repository:** [https://github.com/katarzyna-miechowska-bi/ecommerce-customer-analytics-dashboard]
 
 ---
 
