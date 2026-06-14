@@ -424,7 +424,7 @@ Deploy automated reactivation programs at critical inactivity thresholds (30, 60
 
 ![Customer Risk](images/customer-churn-risk.png)
 
-### Strategic Recommendations
+### Recommendations
 
 ![Recommendations](images/recommendations.png)
 
