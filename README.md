@@ -52,6 +52,48 @@ The dataset includes:
 
 ---
 
+# 🏗️ Data Model
+
+## 📐 Data Model Structure
+The project utilizes a highly optimized **Star Schema** architecture designed to minimize analytical complexity, guarantee performance, and enforce clean data context propagation across all metrics.
+
+As visualized in the data model diagram (`data-model.png`), the structure isolates transactional and behavioral attributes into a single central fact table, surrounded by dedicated dimensional boundaries.
+
+*   **Central Fact Table:**
+    *   `FACT_Customers` – Holds primary customer transactional details, metrics, and foreign keys. Columns used for data relationships have been hidden from the report view to streamline usability and enforce model security.
+*   **Dimension Tables:**
+    *   `Dim_Age` – Groups customer demographics based on specific age brackets for targeted marketing.
+    *   `Dim_LTV_Segment` – Defines structural tiers for Low, Mid, and High customer value.
+    *   `DIM_Login_Segment` – Captures engagement groups built upon historical customer log-in frequencies.
+    *   `DIM_Mobile_Segment` – Evaluates specific behaviors driven by mobile application interaction.
+
+> **Modeling Principles Applied:**
+> *   **1:Many ($1:*$) Cardinality:** Established across all active dimensions to explicitly map master definitions to customer data rows.
+> *   **Single-Direction Cross Filtering:** Filters flow exclusively from the Dimension tables downward to the Fact table, preventing ambiguity, circular dependency errors, and performance degradation during dynamic DAX evaluation.
+
+---
+
+# 🧠 Key DAX Measures
+
+The analytical power of this dashboard relies on core DAX measures that dynamically evaluate customer behavior, financial metrics, and retention risks across varying report filters:
+
+### 📈 Average Customer Lifetime Value (LTV)
+Measures the total revenue generated per customer over their lifetime, serving as the foundation for value-based segmentation.
+
+### 📉 Churn Rate
+The percentage of customers who have stopped engaging or purchasing within a defined period, used to track loyalty and retention health.
+
+### ⚠️ Revenue at Risk
+Estimates the potential future revenue loss by isolating active customers who exhibit high-risk churn indicators.
+
+### 🕹️ Engagement Score
+A composite metric calculated based on login frequency, site activity, and purchase behavior to quantify overall customer interaction.
+
+### 🛒 Average Order Value (AOV)
+Measures the average revenue generated per transaction, tracking buying patterns and checkout quality.
+
+---
+
 # 📈 Dashboard Structure
 
 ## 1️⃣ Executive Overview
