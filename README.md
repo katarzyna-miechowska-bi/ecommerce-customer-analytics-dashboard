@@ -67,10 +67,6 @@ As visualized in the data model diagram (`data-model.png`), the structure isolat
     *   `DIM_Login_Segment` – Captures engagement groups built upon historical customer log-in frequencies.
     *   `DIM_Mobile_Segment` – Evaluates specific behaviors driven by mobile application interaction.
 
-> **Modeling Principles Applied:**
-> *   **1:Many ($1:*$) Cardinality:** Established across all active dimensions to explicitly map master definitions to customer data rows.
-> *   **Single-Direction Cross Filtering:** Filters flow exclusively from the Dimension tables downward to the Fact table, preventing ambiguity, circular dependency errors, and performance degradation during dynamic DAX evaluation.
-
 ---
 
 # 🧠 Key DAX Measures
