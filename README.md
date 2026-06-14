@@ -249,7 +249,7 @@ Customers with prolonged inactivity, low login frequency, and high cart abandonm
 
 ---
 
-## 7️⃣ Strategic Recommendations
+## 7️⃣ Recommendations
 
 Converts analytical findings into business actions and prioritizes initiatives based on expected impact.
 
