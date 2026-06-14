@@ -57,7 +57,10 @@ The dataset includes:
 ## 📐 Data Model Structure
 The project utilizes a highly optimized **Star Schema** architecture designed to minimize analytical complexity, guarantee performance, and enforce clean data context propagation across all metrics.
 
-As visualized in the data model diagram (`data-model.png`), the structure isolates transactional and behavioral attributes into a single central fact table, surrounded by dedicated dimensional boundaries.
+The structure isolates transactional and behavioral attributes into a single central fact table, surrounded by dedicated dimensional boundaries.
+
+### Data Model Schema Diagram
+![Data Model Schema](images/data-model.png)
 
 *   **Central Fact Table:**
     *   `FACT_Customers` – Holds primary customer transactional details, metrics, and foreign keys. Columns used for data relationships have been hidden from the report view to streamline usability and enforce model security.
